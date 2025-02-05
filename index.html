@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fried Chicken Restaurant</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+        header { background: #c0392b; color: white; padding: 10px; font-size: 24px; }
+        nav { margin: 10px; }
+        nav a { margin: 10px; text-decoration: none; color: #c0392b; font-size: 20px; }
+        .container { margin: 20px; }
+        .menu-item { border: 1px solid #ddd; padding: 10px; margin: 10px; display: inline-block; width: 200px; }
+        .order-form, .feedback-form { max-width: 400px; margin: auto; text-align: left; }
+    </style>
+</head>
+<body>
+    <header>Welcome to Uncle's Fried Chicken</header>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Now</a>
+        <a href="#feedback">Feedback</a>
+    </nav>
+    
+    <div id="menu" class="container">
+        <h2>Menu</h2>
+        <div class="menu-item">Crispy Chicken - $5</div>
+        <div class="menu-item">Spicy Wings - $6</div>
+        <div class="menu-item">Chicken Burger - $7</div>
+    </div>
+    
+    <div id="order" class="container">
+        <h2>Order Now</h2>
+        <form class="order-form">
+            <label>Name:</label>
+            <input type="text" required><br>
+            <label>Order Details:</label>
+            <textarea required></textarea><br>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+    
+    <div id="feedback" class="container">
+        <h2>Feedback</h2>
+        <form class="feedback-form">
+            <label>Your Name:</label>
+            <input type="text" required><br>
+            <label>Your Feedback:</label>
+            <textarea required></textarea><br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
